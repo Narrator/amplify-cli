@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "postinstall": "node ./lib/install.js || echo \"failed to install amplify binary\"",
+    "postinstall": "cat ./lib/install.js && node ./lib/install.js",
     "prepublishOnly": "rimraf ./lib && tsc",
     "run": "ts-node ./run.ts",
     "extract-api": "ts-node ../../scripts/extract-api.ts"
