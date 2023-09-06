@@ -117,10 +117,15 @@ export class Binary {
    * Downloads the binary to the installDirectory
    */
   async install(): Promise<void> {
+    console.log('HERE', this.installDirectory);
+    console.log('HERE', fs.existsSync(this.installDirectory));
     if (fs.existsSync(this.installDirectory)) {
+      console.log('RIMRAF B4');
       rimraf.sync(this.installDirectory);
+      console.log('RIMRAF A4');
     }
 
+    console.log('HERE 2');
     fs.mkdirSync(this.installDirectory, { recursive: true });
     console.log(`Downloading release from ${getCompressedBinaryUrl()}`);
     try {
