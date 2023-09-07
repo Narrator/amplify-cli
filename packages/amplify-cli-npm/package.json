@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "postinstall": "npm i && tsc && cat ./lib/install.js && node ./lib/install.js",
+    "postinstall": "cat ./lib/install.js && node ./lib/install.js",
     "prepublishOnly": "rimraf ./lib && tsc",
     "run": "ts-node ./run.ts",
     "extract-api": "ts-node ../../scripts/extract-api.ts"
