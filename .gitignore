@@ -43,7 +43,6 @@ packages/amplify-opensearch-simulator/emulator
 packages/graphql*/lib
 packages/amplify-graphql-transformer-*/lib
 packages/amplify-cli/lib
-packages/amplify-cli-npm/lib
 packages/amplify-cli-core/lib
 packages/amplify-cli-core-vNext/lib
 packages/amplify-cli-logger/lib
